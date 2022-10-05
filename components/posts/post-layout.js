@@ -3,7 +3,8 @@ import Post from "./post"
 export default function PostLayout({posts}) {
     return (
         <div>
-            {posts.map(post => <Post key={post.slug} post={post}></Post>)}
+            {posts.length > 0 ? posts.map(post => <Post key={post.slug} post={post}></Post>)
+            : <div><h2>No Posts</h2></div>}
         </div>
     )
   }
