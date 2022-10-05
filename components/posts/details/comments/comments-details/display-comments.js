@@ -5,8 +5,8 @@ import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 export default function DisplayComments({comments}) {
     return (
         <>
-            {comments.map(comment => (
-                    <div className={classes.listComments}>
+            {comments.length > 0 ? comments.map(comment => (
+                    <div className={classes.listComments} key={comment._id}>
                         <div className="list-group">
                             <div className="list-group-item list-group-item-action">
                                 <h5>{comment.fullName}</h5>
@@ -24,7 +24,7 @@ export default function DisplayComments({comments}) {
                             </div>
                         </div>
                     </div>
-                ))}
+                )) : <div> </div>}
         </>
     )
 }
