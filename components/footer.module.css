@@ -1,0 +1,8 @@
+.footer {
+    background-image: linear-gradient(90deg, var(--color-highlight-primary), var(--color-highlight-secondary));
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    left: 0;
+    margin: 0 auto;
+}

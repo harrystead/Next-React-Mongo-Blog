@@ -1,0 +1,38 @@
+.listComments {
+    text-align: left;
+}
+
+.listComments div div:hover {
+    cursor: pointer;
+}
+
+.comment {
+    font-size: 20px;
+}
+
+.bottomRow {
+    display: inline-block
+}
+
+.bottomRow:not(:first-child){
+    margin-left: 0.5%;
+}
+
+.bottomRow:last-child {
+    float: right;
+    margin-right: 2%;
+}
+
+.thumbsUp {
+    font-size: 25px;
+}
+
+.count {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.thumbsUp:hover {
+    cursor: pointer;
+    color: black;
+}

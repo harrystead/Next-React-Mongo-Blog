@@ -9,9 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@popperjs/core": "^2.11.6",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.2",
+    "fs": "0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "mongodb": "^4.10.0",
     "next": "12.3.1",
+    "path": "^0.12.7",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.3",
+    "react-query": "^3.39.2",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
     "eslint": "8.24.0",

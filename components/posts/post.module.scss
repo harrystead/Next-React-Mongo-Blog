@@ -1,0 +1,123 @@
+
+@mixin mediaBig {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  
+  .card {
+    max-width: 960px;
+    border-radius: var(--border-radius-primary);
+    box-shadow: 24px 24px 80px rgba(0,0,0,0.1);
+    padding: 20px 20px 28px 20px;
+    box-sizing: border-box;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 24px 24px 80px rgba(0,0,0,0.2);
+    }
+
+    @include mediaBig {
+      flex-direction: row;
+      align-items: center;
+      margin: 40px;
+      padding: 32px;
+    }
+
+    .cardImage {
+      width: 100%;
+      max-height: 300px;
+      border-radius: var(--border-radius-primary);
+      object-fit: cover;
+      margin-bottom: 18px;
+      
+      @include mediaBig {
+        width: 45%;
+        max-height: none;
+        min-height: 400px;
+        margin-bottom: 0;
+      }
+    }
+    
+    .cardContent {
+      @include mediaBig {
+        width: 55%;
+        margin-bottom: 5%;
+        padding-left: 40px;
+      }
+
+      .cardDate {
+        display: block;
+        font-family: var(--font-family-secondary);
+        font-size: var(--font-size-caption);
+        line-height: var(--line-height-caption);
+        text-transform: uppercase;
+        text-decoration: none !important;
+        color: var(--color-text);
+        margin-bottom: 6px;
+        
+        @include mediaBig {
+          margin-bottom: 8px;
+        }
+      }
+      
+      .cardTitle {
+        font-family: var(--font-family-primary);
+        font-size: var(--font-size-title);
+        line-height: var(--line-height-title);
+        color: var(--color-text);
+        box-decoration-break: clone;
+        background-image: linear-gradient(90deg, var(--color-highlight-primary), var(--color-highlight-secondary));
+        background-size: 100% 42%;
+        background-repeat: no-repeat;
+        background-position: 0 85%;
+        padding: 0 4px;
+        margin-left: -4px;
+      }
+
+      .cardExcerpt {
+        color: black;
+      }
+
+      .button {
+        margin: 0;
+        position: absolute;
+        width: 48%;
+        margin-top: 0.9em;
+
+        .readMore {
+          display: inline-block;
+          padding: 0.6em 1.2em;
+          margin: 0 0.3em 0.3em 20%;
+          border-radius: 2em;
+          box-sizing: border-box;
+          text-decoration: none;
+          border: none;
+          font-family:'Roboto',sans-serif;
+          font-weight: 300;
+          font-size: var(--border-radius-button);
+          color: #FFFFFF;
+          background-color: #4fdbb8;
+          text-align: center;
+          transition: all 0.2s;
+
+          &:hover {
+            cursor: pointer;
+            background-color:#48b89c;
+          }
+      }
+
+          @media all and (max-width:30em){
+          .readMore {
+            display: block;
+            margin: 0.2em auto;
+          }
+        }
+      }
+    }
+  }
+  
+  

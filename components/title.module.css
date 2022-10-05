@@ -1,0 +1,54 @@
+.header{
+    margin-top: 4%;
+}
+
+.header h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700; 
+    color:#202020;
+    text-transform: uppercase;
+    word-spacing: 1px; 
+    letter-spacing: 2px;
+  }
+
+.header h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 0.6;
+    margin-top: 4.5%;
+    text-transform: none;
+    font-size: .75em;
+    font-weight: normal;
+    font-style: italic; 
+    font-family: "Playfair Display","Bookman",serif;
+    color:#999; 
+    letter-spacing: -0.005em; 
+    word-spacing: 1px;
+    letter-spacing: none;
+}
+
+.header em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.header h1:before {
+    position: absolute;
+    bottom: 38px;
+    width: 20%;
+    height: 4px;
+    content: "";
+    left: 40%;
+    background-image: linear-gradient(90deg, var(--color-highlight-primary), var(--color-highlight-secondary));;
+}
